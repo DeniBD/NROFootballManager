@@ -2,10 +2,15 @@ package com.nro.footballmanager.entity;
 
 import com.nro.footballmanager.entity.enums.RoleEnum;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 @Entity
 @Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,4 +38,5 @@ public class Player {
 //    public Long getId() {
 //        return id;
 //    }
+
 }

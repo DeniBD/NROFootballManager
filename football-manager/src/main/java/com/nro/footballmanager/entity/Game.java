@@ -36,4 +36,7 @@ public class Game {
     @JoinColumn(name = "stadium_id", referencedColumnName = "id")
     private Stadium stadium;
 
+    @Column(nullable = false)
+    private boolean alreadyBeenPlayed = false;
+
 }

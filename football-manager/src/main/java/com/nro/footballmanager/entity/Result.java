@@ -15,4 +15,6 @@ public class Result {
 
     @Column
     private int goalsTeamTwo;
+
+
 }
